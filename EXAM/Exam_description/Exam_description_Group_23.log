@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.19)  15 AUG 2023 18:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.19)  15 AUG 2023 19:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -684,26 +684,41 @@ Overfull \hbox (10.22945pt too wide) in paragraph at lines 83--83
  [][] 
  []
 
-No file Exam_description_Group_23.bbl.
 [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./Exam_description_Group_23.aux) ) 
+
+Package natbib Warning: Citation `Deppneretal2023' on page 2 undefined on input
+ line 104.
+
+
+Package natbib Warning: Citation `Linetal2023' on page 2 undefined on input lin
+e 104.
+
+No file Exam_description_Group_23.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+[2] (./Exam_description_Group_23.aux) ) 
 Here is how much of TeX's memory you used:
- 14943 strings out of 478268
- 241843 string characters out of 5846347
- 560666 words of memory out of 5000000
- 32940 multiletter control sequences out of 15000+600000
- 472455 words of font info for 41 fonts, out of 8000000 for 9000
+ 14977 strings out of 478268
+ 242215 string characters out of 5846347
+ 564666 words of memory out of 5000000
+ 32963 multiletter control sequences out of 15000+600000
+ 477615 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,7n,106p,611b,335s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr17.pfb>
-Output written on Exam_description_Group_23.pdf (1 page, 32797 bytes).
+ 108i,11n,106p,611b,527s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/font
+s/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1
+/public/cm-super/sfrm1200.pfb>
+Output written on Exam_description_Group_23.pdf (2 pages, 58384 bytes).
 PDF statistics:
- 30 PDF objects out of 1000 (max. 8388607)
- 22 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
+ 51 PDF objects out of 1000 (max. 8388607)
+ 36 compressed objects within 1 object stream
+ 8 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
