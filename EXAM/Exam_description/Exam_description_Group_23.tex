@@ -87,13 +87,13 @@
   \item What is your research question?\par
   		This project is intended to build a predictor of residential housing prices in cities in Denmark with a machine learning hedonic model based on interior features such as house area and location, and exterior features such as income level of the neighbourhood, weather condition and cities' economic development level. The project mainly covers major cities in Denmark, e.g., Copenhagen and Aarhus. The frequency of the data will be monthly. The trained model based on 2023 data will be tested on 2022 and 2021 data. 
 
-  \item What kind of data are you planning on using? How will you get access to these data?
-  	\begin{itemize}
-		\item House Prices Data: \par
+  \item What kind of data are you planning on using? How will you get access to these data?\par
+  	%\begin{itemize}
+	%	\item House Prices Data: \par
 			We are going to scrape the individual level house prices from boligsiden, a major real estate broker in Denmark covering housing prices as monthly data of 36 months scale and detailed features of houses in different regions with an open data access. We will scrape the data from \url{https://www.boligsiden.dk/}. Structural features in data includes area, location, age and owner income. Web-scraping of the data is allowed for academic use. There will be about 10000 house-month-region observations in our dataset. 
 		%\item Income Data:\par
 		%	Pay level distribution by region can be found on STATISTICS DENMARK under the Pay Level subsection of Income and Earnings. We are not going to carry out time series analysis due to the constraint of available price data.
-	\end{itemize}
+	%\end{itemize}
 
   \item What will your data analysis be like? Will you use machine learning? How?\par
 		We are going to train a machine learning model on residential housing prices in Copenhagen in 2023 in each postal coded region. The feature variables include structural features such as house area and age, and external variables include location, average income of the neighbourhood and weather conditions of each city. We are going to test the model with 2022 data and data from other cities such as Aarhus.\par
