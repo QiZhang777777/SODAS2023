@@ -91,20 +91,24 @@
   	\begin{itemize}
 		\item House Prices Data: \par
 			We are going to scrape the individual level house prices from boligsiden, a major real estate broker in Denmark covering housing prices as monthly data of 36 months scale and detailed features of houses in different regions with an open data access. We will scrape the data from \url{https://www.boligsiden.dk/}. Structural features in data includes area, location, age and owner income. Web-scraping of the data is allowed for academic use.
-		\item Income Data:\par
-			Pay level distribution by region can be found on STATISTICS DENMARK under the Pay Level subsection of Income and Earnings. We are not going to carry out time series analysis due to the constraint of available price data.
+		%\item Income Data:\par
+		%	Pay level distribution by region can be found on STATISTICS DENMARK under the Pay Level subsection of Income and Earnings. We are not going to carry out time series analysis due to the constraint of available price data.
 	\end{itemize}
 
   \item What will your data analysis be like? Will you use machine learning? How?\par
-		We are going to leverage a \par
-		We are going to apply the polynomial regression on the data to obtain the coefficient of deciding factors on house price in different cities in Denmark and in different temporal sphere.\par
-		We will handle the under-fitting and over-fitting problem when applying the machine learning model to get a more precise version of the house price prediction by leveraging LASSO/ Ridge regression.\par
+		We are going to train a machine learning model on residential housing prices in Copenhagen in 2023 in each postal coded region. The feature variables include structural features such as house area and age, and external variables include location, average income of the neighbourhood and weather conditions of each city. We are going to test the model with 2022 data and data from other cities such as Aarhus.\par
+		We are going to apply the polynomial and LASSO regression on the data to obtain the coefficient of deciding factors on house price in different cities in Denmark and in different temporal sphere.\par
+		We will handle the under-fitting and over-fitting problem when applying the machine learning model to get a more precise version of the house price prediction.\par
+		We will conduct cross-validation with k-fold method.\par
 		
   \item Have you already identified other papers within this area that you can use in a literature review? If so, name a few and explain what they do in one sentence only.\par
-		There are several papers recently on top journals in real estate economics predicting housing prices with machine learning models. \cite{Deppneretal2023} applies non-parametric machine learning model with k-fold cross-validation to examine the U.S. commercial real estate appraisal to shrink the deviations between market values and subsequent transaction prices. \cite{Linetal2023} augments the traditional hedonic model with Gradient Boosting Machine algorithm to better predict the housing prices in Beijing.
+		There are several papers recently on top journals in real estate economics predicting housing prices with machine learning models: \newline
+		\cite{Deppneretal2023} applies non-parametric machine learning model with k-fold cross-validation to examine the U.S. commercial real estate appraisal to shrink the deviations between market values and subsequent transaction prices. \newline
+		\cite{Linetal2023} augments the traditional hedonic model with Gradient Boosting Machine algorithm to predict housing prices in Beijing. \newline
+		\cite{TchuenteNyawa2022} uses artificial neural networks, random forest, adaptive bBoosting, gradient boosting and K-nearest neighbours algorithms to estimate real estate prices in French cities.
 		
   \item How do you 'contribute' to the literature?\par
-		The main contribution of this project includes: 1) creating a comprehensive dataset on Denmark residential real estate market; 2)
+		The main contribution of this project includes: 1) creating a comprehensive dataset on Denmark residential real estate market; 2) building a predictor of Denmark housing prices in different cities.
 \end{enumerate}
 	
 \newpage	
