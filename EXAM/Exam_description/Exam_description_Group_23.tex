@@ -1,0 +1,182 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[12pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+\usepackage{setspace}
+\usepackage{parskip}
+\parskip=1\baselineskip %\advance\parskip by 0pt plus 2pt% to change between paragraphs space
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+% \usepackage{gravarphicx} % support the \includegravarphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{filecontents}
+\usepackage{natbib}
+\usepackage{scrextend}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{tabularx}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\usepackage{lscape}
+\usepackage{longtable}
+ \usepackage{booktabs}
+
+
+
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\rmfamily\bfseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+\usepackage[colorlinks,citecolor=black,urlcolor=black,bookmarks=false,hypertexnames=true]{hyperref} 
+%%% END Article customizations
+%%% The "real" document content comes below...
+
+\title{ECON6078 Research Proposal\\ Financier Investment Strategy and Predictability of Exchange Rates:\\ A Textual Analysis of Fund Prospectus}
+\author{Xing Mingjie 3036029301}
+\date{\today} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+\begin{document}
+\maketitle
+\section{Motivation}
+	The violence of connection between exchange rate and real variables as predicted by modern macro models has been a long lasting puzzle since the establishment of floating exchange rate system. In their seminal work, \cite{MeeseRogoff1983} found that neither flexible price nor sticky price model outperforms a random walk model.\par
+	In contemporaneous work, the micro-foundation underlying the exchange rate disconnect puzzle becomes more and more evident, which recognize that the disconnection is predominantly the result of the carry trade behviors of financial intermediaries. This strand of literature include \cite{GabaixMaggiori2015}, \cite{ItshkohiMukhin2021}, \cite{Jiangetal2021}, and \cite{EichenbaumJohannsenRebelo2021}.\par
+	In the famous demonstration, \cite{Mussa1986} documents that the nominal exchange rate and the real exchange rate's contemporaneous changes are in high correlation after the failure of Breton Wood System. The following strand studies mainly the medium and long-run predictability of nominal exchange rates, including \cite{Mark1995} and \cite{Engeletal2007}. \cite{EichenbaumJohannsenRebelo2021} leverages the abovementioned progress on micro-foundation of exchange rate on foreign demand of domestic bonds and shows that the NER is only predictable through the aforementioned shock to home assets in the medium and long horizons in contrast to the work of \cite{Mussa1986}. Work is still needed in rationalizing the miscorrelation between changes in the RER and changes in NER in a short horizon.\par
+	On the other hand, financial financiers' prospectuses conveys message of its investment strategy in the following fiscal year. But this rich source of forward looking qualitative resource is not yet systematically investigated until recently by \cite{KostovetskyWarner2020}, \cite{KrakowSchaefer2020}, \cite{AbisLines2022}, and \cite{ShengXuZheng2022}.\par
+	My study proposes that we can leverage textual analysis techniques in matching funds promised investment strategy in foreign and home bonds and their actual investment behaviors in the following year. Fund's stated strategy can be used as a predictor of the supply and demand shift of dynamics in foreign exchange in the following fiscal year by predicting the future capital flows. In a case where there is at least non-lying phenomenon in a fund's future investment strategy in its prospectus, we can expect that the message conveyed in the fund's is a predictor of the fund's future cash flow turbulence and thus the aggregate imbalances in the demand of financial assets, driving level and volatility of exchange rates.\par
+	Further, we can establish a fund commitment index measuring the extent to which a mutual fund is committed to its investment strategy in its prospectus of bond structure.
+	
+	\subsection{Main question:}
+	\begin{enumerate}
+		\item To what extent do mutual funds' actual capital flow behavior adhere to the investment strategy in foreign and domestic bonds as announced in their prospectus;
+		\item Whether the investment strategy announcement in prospectus give hints to the supply and demand and further, exchange rate dynamics in the following fiscal year.
+	\end{enumerate}
+		
+		
+		
+\section{Literature Review}
+\subsection{Exchange Rate Disconnect}
+	In addition to the canonical discovery of exchange rate disconnection as mentioned above, I will primarily focus on the research into micro-foundation of exchange rate dynamics in recent years.  \cite{GabaixMaggiori2015} find that capital flows alters the balance sheets of financiers that bear the risks resulting from international imbalances in the demand for financial assets. This alteration in balance sheets requires a changed compensation for holding currency risk, thus affecting the level  and volatility of exchange rates. \cite{ItshkohiMukhin2021} find that the only driving force that generates the exchange rate disconnect properties is the exogenous small but persistent shock to international asset demand. Their methodology is a typical macroeconomic one with a dynamic general equilibrium model and its quantification. \cite{Jiangetal2021} base the linkage of U.S. dollar's valuation and foreign investors' yield from holding U.S. safe assets on the United States role as provider of world's provider of safe assets and reserve currency.\par 
+	\cite{EichenbaumJohannsenRebelo2021} adopt the micro-foundation proposed by \cite{GabaixMaggiori2015} and \cite{ItshkohiMukhin2021} as an additional term in the model setup, calibrate a three-country medium-size open economy DSGE model and quantify that 75\% of the variation in the medium and long term real exchange rate dynamics can be explained by the shock to foreign demand of dollar-denominated bonds. 	
+		
+\subsection{Firm's Prospectus and its Behavior}
+	The study is also related to the study of fund prospectus informativeness to its actual behaviour. A large body of investigation focuses on the quantitative factors disciplining disclosure distracted from, say fund portfolio information. As an example, \cite{JiangZheng2018} develops measure active fundamental performance (AFP) to evaluate fund investment skills by examining the covariance between deviations of its portfolio weights from a benchmark portfolio and the underlying stock performance on firm fundamental information publication days.\par 
+	Another strand of literature that this study follows is the textual and empirical analysis of corporate disclosures. \cite{deHaanetal2021} investigates unnecessary obfuscation in S\&P 500 index funds' prospectuses in attempt to charge high fees to rationalize investors' poor decision in choice of mutual funds. \cite{KostovetskyWarner2020} performs textual analysis on prospectuses to study innovation and product differentiation and finds that investors respond to text-based uniqueness than other measures such as holdings or returns uniqueness. The textual analysis exercise of \cite{KrakowSchaefer2020} on mutual funds' prospectuses, the authors find that funds' risk-taking behavior and risk-adjusted-performance increase with the informativeness of their disclosures. Content-based updates of disclosures are informative about fund's future performance.\par
+	In the work of \cite{AbisLines2022}, the authors use machine learning to group together funds with similar strategy descriptions and finds that mutual funds largely do keep their promises of investment strategy as noticed in their prospectuses. Another work by \cite{ShengXuZheng2022} focuses on the risk disclosures in funds' summary prospectuses and finds that the disclosed idiosyncratic risks explain about 50\% of variations in fund returns and 95\% when systematic market risk is concerned. It also shows that funds tend to overly disclose their risks in prospectuses. They explore three aspects of informativeness: relevance, conciseness and order, first two of which is related to our study. Relevance captures how well the disclosed risks explain future fund returns and conciseness examines whether disclosed risks are significant in explaining fund returns.
+
+	
+	
+\section{Data and Facts}
+	\subsection{Fund's Prospectus}
+	As is required by the current Registration From Used by Open-End Management Investment Companies by U.S. Securities and Exchange Commission \cite{SEC1998}, funds should disclose in their prospectus "\textit{principal strategies that it used to achieve its investment objectives, which would include the particular type or types of securities in which the fund will invest principally}" in a clear, concise and understandable language. Given the length of a full prospectus and devotion of an average investor, SEC require funds to file fund summary prospectus in 2009. The mutual fund prospectus data is available on \textit{Mutual Fund Prospectus Risk/Return Summary Data Sets} on SEC website. It contains fund quarterly prospectus since 2010. Additional dataset is also available from \textit{the Center for Research in Security Prices} (CRSP) Survivorship Bias Free Mutual Fund Database since 2009 and the SEC's \textit{Electronic Data Gathering, Analysis, and Retrieval} (EDGAR) system covering period since 2000. The major source, the Risk/Return Summary Data sets contain information derived from the XBRL tagged mutual fund prospectuses filed with the Commission by individual registrants as well as Commission-generated filing identifiers. The submissions data set contains summary information about an entire EDGAR submission. Some fields were sourced directly from EDGAR submission information, while other fields of data were sourced from the Interactive Data exhibits of the submission. The TXT data set contains non-numeric data, one row per data point in the financial statements.\par
+
+	\subsubsection{Investment Strategy Summary Examples}
+	The tag of interest to our study is \textit{StrategyNarrativeTextBlock} in TXT file. Here follows two investment strategy narrative examples in the latest document.\par
+	
+	Investment strategy summary example 1:
+	\begin{addmargin}[2cm]{2cm}
+	\textit{Normally investing primarily in common stocks. Investing in securities of companies whose value Fidelity Management \& Research Company LLC (FMR) believes is not fully recognized by the public. Investing in domestic and foreign issuers. Investing in either "growth" stocks or "value" stocks or both. Using fundamental analysis of factors such as each issuer's financial condition and industry position, as well as market and economic conditions, to select investments.}
+	\end{addmargin}
+	
+	Investment strategy summary example 2:	
+	\begin{addmargin}[2cm]{2cm}
+	\textit{Normally investing at least 80\% of assets in securities included in the Bloomberg Global Aggregate ex-USD Float Adjusted RIC Diversified Index (Hedged USD), which is a multi-currency benchmark that includes fixed-rate treasury, government-related, corporate and securitized bonds from developed and emerging markets issuers while excluding USD denominated debt. Using statistical sampling techniques based on duration, maturity, interest rate sensitivity, security structure, and credit quality to attempt to replicate the returns of the Bloomberg Global Aggregate ex-USD Float Adjusted RIC Diversified Index (Hedged USD) using a smaller number of securities. Hedging the fund's foreign currency exposures utilizing forward foreign currency exchange contracts. Engaging in transactions that have a leveraging effect on the fund, including investments in derivatives - such as swaps (interest rate, total return, and credit default), options, and futures contracts - and forward-settling securities, to adjust the fund's risk exposure.}
+	\end{addmargin}
+	
+	\subsection{Exchange Rate Dynamics}
+	The exchange rate of USD between other countries can be found on the IMF's \textit{Exchange Rate Archives by Month}.
+	
+\section{Methodology}
+	First, we follow the work of \cite{AbisLines2022} to use a \textit{k-means} algorithm from unsupervised machine learning to distill the text into interpretable strategy peer groups that is clusters of similar descriptions that represent distinct investment approaches.\par
+	
+	Second, we extract the structure of foreign and domestic assets in the investment strategy by extracting with a dictionary-based method and report the stylized facts such as frequency and relative importance in the text. A non-exhaustive list goes as follows:\par
+\begin{table}[h]
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Foreign} & \textbf{Home} &  \\ \midrule
+foreign          & home          &  \\
+global           & domestic      &  \\
+multicurrency    & U.S.          &  \\
+diversi          &               &  \\ \bottomrule
+\end{tabular}
+\end{table}
+	Third, we can further apply the topic method to decide the relative importance of foreign and domestic asset in a prospectus. By comparing this ratio and the actual ratio we can derive the informativeness of prospectus when it comes to the investment structure. \par
+	Fourth, we use the aggregate average relative importance of foreign asset in the prospectus in the fund's group as a predictor of the particular currency's exchange rate in to investigate the forecasting relationship in the fiscal year. The proposed control variables include year effect, fund size, fund family size and risk measure.\par
+	\subsection{Identificaion}
+	There are several identification problems need to be tested. 
+	\begin{enumerate}
+		\item Reverse causality: whether expected monetary regime shifts or expected monetary policy operations affect the foreign exchange rate, thus affecting a fund's capital decision of its portfolio in the prospectus;
+		\item Whether foreign mutual funds' performance affects the exchange rate dynamics. I propose to leverage data sources in mutual fund prospectus such as Hong Kong and Eurozone to check the robustness of predictability of exchange rates with USD.
+	\end{enumerate}
+
+
+\section{Plan to Acquire the Necessary Research Skills to Perform the Study:}
+	\subsection{Textual Analysis Techniques:}
+	The textual analysis techniques planned to acquire includes unsupervised machine learning and dictionary-based. More will be added in through the study process.
+	\subsection{Statistical Methods:}
+	A series of causality test and robustness check techniques will be picked up during study process. 
+
+\section{Outcomes and Value}
+\subsection{Economic Intuition:}
+	\begin{enumerate}
+		\item If mutual fund truthfully reports its investment strategy in the following year, and faithfully commits to it in the fiscal year, the change in the investment strategy may drive the demand and supply of currencies by altering the foreign and domestic supply and demand of domestic and foreign debts. A huge change in sentiment, especially those changing simultaneously across a large body of financiers, is the main cause of exchange rate markets alterations.
+		\item The investment strategy in prospectus also exhibits a fund's confidence in the dynamics of the following fiscal year. A more confident prospect of, say foreign debt, can be a self-fulfilling prophecy and push up the demand for foreign currency and hence level up its exchange rate to home currency. And when the foreign bond's interest rate falls due to increased supply, the market returns to a new equilibrium.
+	\end{enumerate}
+
+\subsection{Expected Contribution:}
+	The expected contribution is
+	\begin{enumerate}
+		\item new textual data and evidence contributing to the study of exchange rate dynamics;
+		\item new and more detailed investigation into the proposed capital structure of foreign and domestic bonds and its match with actual capital structure contributing to the study of prospectus summary. %An extension to this is to forecast the capital 
+		\item new index that measures a firm's commitment to its investment strategy in bonds market which can also help in the supervision by SEC and can be used as a reference in investor's decision.
+	\end{enumerate}
+	
+	
+\footnotesize
+\bibliographystyle{apalike}
+\bibliography{RP}
+
+
+\end{document}
