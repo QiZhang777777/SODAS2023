@@ -128,12 +128,26 @@
 		We are going to train a machine learning model on residential housing prices in Copenhagen in 2023 in each postal coded region. The feature variables include structural features such as house area and age, and external variables include location, average income of the neighbourhood and weather conditions of each city. We are going to test the model with 2022 data and data from other cities such as Aarhus.\par
 		We are going to apply the polynomial and LASSO regression on the data to obtain the coefficient of deciding factors on house price in different cities in Denmark and in different temporal sphere.\par
 		We will handle the under-fitting and over-fitting problem when applying the machine learning model to get a more precise version of the house price prediction.\par
-		make_pipeline
 		We will conduct cross-validation with 10-fold method. We split the data into 10 fold even sized validation bins. For each bin fit model on the data outside the validation bin. We transform and predict the target in the validation bin. We pick the model which performed the best on the validation data during cross validation.\par
 		visualize partial effects with partial dependence plots
 		
 \section{Empirical Analysis}
-
+	\subsection{Polynomial}
+		A common starting point in modelling house price in the literature is polynomial linear regression. We conduct LASSO regularization penalizing parameters to tackle the problem of over- and under-fitting, and run a 10-fold cross validation to tune for the best hyperparameter $\lambda$ given the small size of our dataset. The result can be found below.
+		
+		/Figure of predicted values against real test data./
+		
+		The best hyperparameter from cross validation is given. The RMSE against each hyperparameter tuned is given as follows.
+		\subsubsection{Learning Curve}
+			We examine the learning curve to find out if our model faces overfitting (high variance) or under-fitting (high bias) problem following (\cite{Raschka2019} p.201-6). The x axis is the training data size, and the y axis is the model training and validation accuracies.
+		\subsubsection{Validation Curve}
+			We also leverage the validation curve to addressing over- and under-fitting. The y axis is the same as the learning curve, while the x axis is the model hyper-parameters
+	\subsection{Gradient Boosting Model}
+		Gradient boosting model is a type of ensemble methods combining different classifiers that has better generalization performance than each individual classifier. (p.223-57, \cite{Raschka2019}) As a boosting model, gradient boosting boosts weak learners to strong learners. It is different from adaptive learning with regards to how weights are updated and how weak classifiers are combined.\par
+		It works as following:
+	\subsection{Model Comparison}
+		We compare the root mean squared errors and r-squared of each model to see how well they perform in prediction. 
+	
 \section{Conclusion}
 	
 \newpage	
