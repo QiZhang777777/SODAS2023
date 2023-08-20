@@ -133,7 +133,7 @@
 		
 \section{Empirical Analysis}
 	\subsection{Polynomial}
-		A common starting point in modelling house price in the literature is polynomial linear regression. We conduct LASSO regularization penalizing parameters to tackle the problem of over- and under-fitting, and run a 10-fold cross validation to tune for the best hyperparameter $\lambda$ given the small size of our dataset. The result can be found below.
+		.  The result can be found below.
 		
 		/Figure of predicted values against real test data./
 		
@@ -143,8 +143,8 @@
 		\subsubsection{Validation Curve}
 			We also leverage the validation curve to addressing over- and under-fitting. The y axis is the same as the learning curve, while the x axis is the model hyper-parameters
 	\subsection{Gradient Boosting Model}
-		Gradient boosting model is a type of ensemble methods combining different classifiers that has better generalization performance than each individual classifier. (p.223-57, \cite{Raschka2019}) As a boosting model, gradient boosting boosts weak learners to strong learners. It is different from adaptive learning with regards to how weights are updated and how weak classifiers are combined.\par
-		It works as following:
+		Gradient boosting model is a type of ensemble methods combining different classifiers that has better generalization performance than each individual classifier. (p.223-57, \cite{Raschka2019}) As a boosting model, gradient boosting boosts weak learners to strong learners. It is different from adaptive learning with regards to how weights are updated and how weak classifiers are combined. We follow the algorithm given in \cite{raschka2019} in Chapter 7 and the authors' lecture note on ensemble models on \url{https://pages.stat.wisc.edu/~sraschka/teaching/stat479-fs2019/}.\par
+		The Gradient boosting model works as following:
 	\subsection{Model Comparison}
 		We compare the root mean squared errors and r-squared of each model to see how well they perform in prediction. 
 	
